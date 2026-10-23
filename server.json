@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server-definition.json",
+  "name": "io.github.MnemosyneOS/mnemosyne",
+  "description": "Local-first MCP memory server: zero deps, SQLite you own, Mem0-compatible tool names.",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/MnemosyneOS/mnemosyne",
+    "source": "github"
+  },
+  "version": "8.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mnemosyne-os",
+      "version": "8.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MNEMOSYNE_MCP_TOKEN",
+          "description": "Shared-secret token for the MCP endpoint. Optional but recommended.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
