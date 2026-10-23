@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+tmp/
+results/*.json
+results/*.md
+!results/2026-10-24.md
+datasets/*/raw.jsonl
