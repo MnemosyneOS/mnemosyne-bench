@@ -1,0 +1,17 @@
+[project]
+name = "mnemosyne-bench"
+version = "0.1.0"
+description = "Reproducible benchmarks for AI agent memory systems"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+
+# Core harness is zero-dependency. Optional extras install the systems
+# under test:
+[project.optional-dependencies]
+mnemosyne = ["mnemosyne-os"]
+mem0 = ["mem0ai"]
+zep = ["zep-python"]
+
+[tool.setuptools]
+packages = ["harness", "systems"]
